@@ -11,7 +11,7 @@ resource "azurerm_lb" "demo" {
 }
 
 resource "azurerm_public_ip" "demo" {
-  name                = "demo-public-ip"
+  name                = "demo-public-iprbm"
   location            = var.location
   resource_group_name = azurerm_resource_group.demo.name
   allocation_method   = "Static"
