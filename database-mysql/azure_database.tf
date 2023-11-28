@@ -9,10 +9,10 @@ resource "azurerm_mysql_server" "demo" {
   backup_retention_days        = 7
   geo_redundant_backup_enabled = false
 
-  administrator_login = "mysqladmin"
-  #administrator_login_password = "SETSECUREPASS"
-  version                 = "5.7"
-  ssl_enforcement_enabled = true
+  administrator_login          = "mysqladmin"
+  administrator_login_password = "r0b3rt1t0RBM2018"
+  version                      = "5.7"
+  ssl_enforcement_enabled      = true
 }
 
 resource "azurerm_mysql_database" "training" {

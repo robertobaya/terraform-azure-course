@@ -7,15 +7,15 @@ az login
 
 # Create recoursegroup for Terraform state
 ```
-az group create -l westeurope -n terraform-state
+az group create -l eastus2 -n terraform-state
 ```
 
 # Create storage account
 *Name must be unique across Azure*
 
 ```
-az storage account create -g terraform-state -l westeurope \
-  --name tfstoragetrainingjorn \
+az storage account create -g terraform-state -l eastus2 \
+  --name tfstoragellamita \
   --sku Standard_LRS \
   --encryption-services blob
 ```
